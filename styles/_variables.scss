@@ -1,0 +1,20 @@
+$primaryColor: #05092B;
+$secondaryColor : #ffffff;
+$gradient : linear-gradient(91deg, #351EE0 0%, #3F74EF 100%);
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn {
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}

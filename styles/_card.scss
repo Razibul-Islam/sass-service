@@ -1,0 +1,53 @@
+@import "variables";
+
+.card-wrapper{
+    
+    .cardUl{
+        @include flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        transition: 1s ease;
+        .cardLi{
+            // background: $gradient;
+            padding: 40px 30px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+            
+            .cardIcon{
+                width: 132px;
+                height: 132px;
+                border-radius: 100%;
+                @include flex;
+                margin: 0 auto;
+                object{
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+            &:hover{
+                .cardIcon{
+                    background: $gradient;
+                }
+            }
+            // .cardIcon:hover{
+            //     background: $gradient;
+            // }
+            h3{
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 36px;
+                font-feature-settings: 'clig' off, 'liga' off;
+                text-align: center;
+                margin: 20px 0;
+            }
+            p{
+                text-align: center;
+                font-size: 18px;
+                font-weight: 400;
+                font-feature-settings: 'clig' off, 'liga' off;
+                line-height: 28px;
+                letter-spacing: -0.36px;
+            }
+        }
+    }
+}

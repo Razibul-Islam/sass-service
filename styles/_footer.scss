@@ -1,0 +1,152 @@
+footer {
+    background: $primaryColor;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    @include flex;
+
+    .left {
+        position: absolute;
+        bottom: 0;
+        left: -113.68px;
+    }
+
+    .right {
+        position: absolute;
+        bottom: 0;
+        right: -113.68px;
+    }
+
+    .footerContent {
+        .footerUl {
+            padding-top: 205px;
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            font-size: 22px;
+            font-weight: 700;
+            font-feature-settings: 'clig' off, 'liga' off;
+            color: $secondaryColor;
+
+            .footerLogo {
+                @include flex;
+                gap: 10px;
+                justify-content: start;
+            }
+
+            .linkHeader {
+                width: 300px;
+            }
+        }
+
+        .footerLinks {
+            @include flex;
+            justify-content: space-between;
+
+            .links {
+                width: 300px;
+                color: $secondaryColor;
+
+                li {
+                    opacity: 0.8;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: -0.36px;
+                    line-height: 28px;
+
+                    .social-Icons-footer {
+
+                        span {
+                            display: block;
+                            padding: 10px;
+                            border: 1px solid $secondaryColor;
+                        }
+                    }
+                }
+
+                .follow {
+                    opacity: 1;
+                    font-weight: 700;
+                }
+
+            }
+
+            .contact-links {
+                @include flex;
+                align-items: start;
+                justify-content: start;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    @include flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 13px;
+                }
+                li:nth-last-child(1){
+                    margin-left: 27px;
+                }
+            }
+        }
+    }
+}
+.cta{
+    background: $secondaryColor;
+    border-radius: 5px;
+    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+    width: 1290px;
+    margin:208px auto -131px auto;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    @include flex;
+    gap: 51px;
+    .imageWrapper{
+        .round{
+            position: absolute;
+            width: 595px;
+            height: 595px;
+            border-radius: 595px;
+            background: $gradient;
+            bottom: -297px;
+            left: -116px;
+        }
+        img{
+            position: relative;
+            z-index: 11;
+            margin-bottom: -5px;
+        }
+    }
+    .text{
+        .CTAtitle{
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: -1.48px;
+            line-height: 68px;
+            text-transform: capitalize;
+            margin-bottom: 45px;
+            color: $primaryColor;
+            span{
+                background: $gradient;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .CTAbtn{
+            @include btn;
+            background-color: transparent;
+            color: $primaryColor;
+            border: 1px solid #351EE0;
+            
+        }
+        .CTAbtn:hover{
+            background: $gradient;
+            color: $secondaryColor;
+            border: 1px solid transparent;
+        }
+    }
+}

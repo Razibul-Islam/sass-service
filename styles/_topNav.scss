@@ -1,0 +1,42 @@
+@import "./variables";
+
+.wrapper-topNav{
+    height: 70px;
+    background: #ECF0FB;
+    .top-Nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        ul{
+            display: flex;
+        }
+        .contact{
+            gap: 30px;
+            font-size: 18px;
+            font-weight: 400;
+            li{
+                i{
+                    background-image: $gradient;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 16px;
+                    font-weight: 900;
+                    margin-right: 10px;
+                }
+                
+            }
+        }
+        .social{
+            gap: 25px;
+            li{
+                i{
+                    color: $primaryColor;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
